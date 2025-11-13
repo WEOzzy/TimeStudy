@@ -1,5 +1,6 @@
 import tkinter as tk
 from tkinter import messagebox
+import TimeStudyOOP as ts
 
 # create the main tkinter app window
 app = tk.Tk()
@@ -40,6 +41,7 @@ def get_num_fields():
 def print_values():
     values = [entry.get() for entry in user_inputs]
     print("User inputs:", values)
+    ts.button1_handle()
 
 # button to trigger the addition of input fields
 add_fields_button = tk.Button(app, text="Add Input Fields", command=get_num_fields)
