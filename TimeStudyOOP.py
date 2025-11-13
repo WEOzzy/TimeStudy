@@ -6,9 +6,14 @@ import warnings
 warnings.filterwarnings('ignore')
 
 """
-Different implementation to map the time study to a tkinter gui allowing for a 
-more user friendly experience or just for testing
+connect to the da
 """
 
-def button1_handle():
-    print("this is a test.")
+# create and maintain the database connection for frequent operations
+conn = sqlite3.connect('TimeStudy.db')
+
+
+def fetch_plan_id(plan_id):
+    c = conn.cursor()
+    # get the details of the plan id or create a new row for the plan id
+    pass
