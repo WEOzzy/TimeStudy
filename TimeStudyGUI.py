@@ -1,10 +1,15 @@
 import tkinter as tk
 import TimeStudyOOP as ts
 
+conn = ts.get_connection()
+print(conn)
+ts.create_table(conn)
+print("table should be created")
+
 def submit_plan_id(event):
     plan_id = plan_id_entry.get()
     print("Details for PlanID: ", plan_id)
-    ts.fetch_plan_id(plan_id)
+    ts.fetch_plan_id(conn, plan_id)
 
 # create the main tkinter app window
 app = tk.Tk()

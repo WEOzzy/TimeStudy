@@ -16,6 +16,7 @@
 # pycharm
 *.idea/
 *.venv/
+*.__pycache_/
 
 # secrets
 *.properties
